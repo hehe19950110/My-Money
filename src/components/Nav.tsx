@@ -7,9 +7,11 @@ const NavStyle = styled.nav`
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
   line-height: 16px;
   background: #649173;
-  margin-left: -50px;
+  display: flex;
   ul {     
     display: flex;
+    width: 100%;
+    padding-left: 0;
     li {
       width: 33.33%;
       text-align: center;

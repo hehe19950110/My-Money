@@ -7,6 +7,11 @@ import day from 'dayjs';
 import {useHistoryRecords } from "components/Hooks/useHistoryRecord";
 import 'core-js';
 
+const Title = styled.div`
+  font-weight:800;
+  font-size: 20px;
+  margin-left: 16px;
+`
 const Item = styled.span`
 display: flex;
 flex-direction: row;
@@ -70,7 +75,7 @@ function Statistics() {
       <CSection value={category}
                 onChange={value => setCategory(value)}/>
       {result2.map( (v:any) => <div>
-        <h3>{v.date}</h3>
+        <Title>{v.date}</Title>
         <div>
         {v.items.map((r:any) => {
           return <Item>
